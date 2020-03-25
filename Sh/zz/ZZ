@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo vueltas? 
+read V
+  
+echo  "##################################" 
+echo  "#    "vueltas:  $V"              "
+echo  "##################################"
+
+echo duracion de la vuelta?
+echo "ingresar minutos. Ej: 4 (serian 4 minutos)"
+read min
+echo "#########################################"
+echo "#  "$min min. de duracion por vuelta" "
+echo "#########################################"
+
+
+t=$(( $min * 60))
+echo $t
+
+while [ $V -gt 0 ]
+    do
+	echo vuelta: $V | figlet | lolcat  &  aplay bell.wav &  sleep $t 
+	
+	((V--))
+	
+	done
+
+aplay voice.wav
+echo FERTIG | figlet | lolcat
+exit 
