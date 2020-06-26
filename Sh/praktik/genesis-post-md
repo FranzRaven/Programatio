@@ -8,7 +8,9 @@ dat=$(date '+%Y-%m-%d')
 tit=$dat-$Resp
 
  
- echo $tit.md 
+touch "$(echo $tit.md)" 
 
+
+echo -e "---\n layout : post\n title : $Resp\n---" >> $tit.md
 
 
