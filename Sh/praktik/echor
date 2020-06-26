@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echor(){
+echo "hola."
+echo "hola.."
+echo "hola..."
+echo "hola...."
+
+echo "hola $USER"
+
+}
+
+echor

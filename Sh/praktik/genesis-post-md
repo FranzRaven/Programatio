@@ -1,0 +1,14 @@
+#! /usr/bin/env sh
+echo Ingrese nombre del post
+
+read Resp
+
+dat=$(date '+%Y-%m-%d')
+
+tit=$dat-$Resp
+
+ 
+ echo $tit.md 
+
+
+
