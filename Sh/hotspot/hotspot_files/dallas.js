@@ -1,0 +1,2 @@
+var EzDallLoaded=false;var EzLoadDall=function(){if(EzDallLoaded!=true){EzDallLoaded=true;var script=document.createElement("script");script.src=__ezpbdall;script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);}}
+window.addEventListener("load",function(){setTimeout(EzLoadDall,__ezpbdalld);},false);
