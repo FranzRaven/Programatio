@@ -1,0 +1,9 @@
+* {
+	background: #222222;
+	color: whitesmoke;
+}
+
+.box {
+	display: flex;
+	justify-content: space-evenly;
+}
